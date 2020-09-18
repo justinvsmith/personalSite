@@ -10,11 +10,14 @@
 }
 
 .header {
-    width: 95%;
+    width: 100%;
+    height: 8vh;
     display: flex;
     padding: 20px;
     justify-content: space-between;
     margin-bottom: 15px;
+    position: fixed;
+    background-color: #ffffff;
 }
 
 .headerLeft, .headerRight {
@@ -26,7 +29,9 @@
 .headerLeft {
     width: 42%;
     font-size: 1.1em;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     margin-left: 5px;
 }
 
@@ -45,20 +50,37 @@
     font-size: 0.9em;
     font-weight: 200;
     list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 .headerRight li {
     display: inline-block;
-    margin: 0px 5px;
+    margin: 0px 10px;
     text-align: right;
+}
+
+.active{
+    color: #3D90D3;
+}
+
+li a:hover {
+    color: #3D90D3;
 }
 
 /* --------
     Main Content Section
                 --------------*/
 
-.main {
+.indexMain {
     display: flex;
+    padding-top: 8vh;
+}
+
+.main {
+    width: 100%;
+    background-color: #27557C;
+    height: 2000px;
 }
 
 .mainLeft{
@@ -161,27 +183,42 @@ a {
 }
 
 button {
-    padding: 10px 25px;
+    padding: 8px 25px;
+    width: 125px;
     border-radius: 50px;
     font-weight: bold;
     border: none;
 }
 
-#resume {
+#resume, #projects:hover {
     background-color: #3D90D3;
     color: #ffffff;
+    border: 1px solid #3D90D3;
+    transition: background-color .5s;
+}
+
+
+#resume:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid  #3D90D3;
+    transition: background-color .3s;
 }
 
 #projects {
-    background-color: #DBD9D6;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    transition: background-color .5s;
 }
 
 .footer {
     width: 100%;
-    height: 5vh;
+    height: 8vh;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .footLeft {
@@ -189,11 +226,12 @@ button {
 }
 
 .footRight {
-    width: 25%;
+    width: 35%;
     display: flex;
     justify-content: space-evenly;
-    margin-right: 62px;
-    /* border: 1px solid black; */
+    /* margin-right: 48px; */
+    margin-top: 18px;
+    padding-left: 5px;
 }
 
 .footerContent {
