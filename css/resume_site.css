@@ -75,12 +75,6 @@ li a:hover {
     padding-top: 8vh;
 }
 
-.main {
-    width: 100%;
-    background-color: #27557C;
-    height: 2000px;
-}
-
 .mainLeft{
     width: 40%;
     background-color: #27557C;
@@ -237,4 +231,56 @@ button {
 
 h4 {
     margin-bottom: 8px;
+}
+
+
+/* -----------
+    Resume Page
+    ------------ */
+
+.main {
+    width: 100%;
+    padding: 50px;
+    background-color: #27557C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resCategory {
+    font-size: 5em;
+    color: green;
+    margin-top: 15vh;
+    margin-bottom: 50px;
+}
+
+.resContent {
+    width: 950px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+.resumeTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.position {
+    color:  #3D90D3;
+    font-weight: bold;
+}
+
+.company {
+    font-style: italic;
+}
+
+.responsibilities {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.responsibilities li {
+    margin-bottom: 5px;
 }
