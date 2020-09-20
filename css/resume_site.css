@@ -256,7 +256,7 @@ h4 {
     padding-bottom: 150px;
 }
 
-.resCategory {
+.resCategory, .projContent {
     font-size: 2em;
     font-weight: bold;
     color: #ffffff;
@@ -265,7 +265,7 @@ h4 {
     align-self: center;
 }
 
-.resContent {
+.resContent, .projContent {
     width: 950px;
     background-color: white;
     margin: 25px auto;
@@ -333,3 +333,8 @@ h4 {
 }
 
 
+/* -----------
+    Project Page
+    ------------ */
+
+    
