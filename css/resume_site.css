@@ -5,6 +5,7 @@
     font-family: sans-serif;
 }
 
+@media screen and (min-width: 900px){
 .container {
     width: 100%;
 }
@@ -146,6 +147,10 @@ li a:hover {
 
 #heroTitle{
     font-size: 1.2em;
+}
+
+.mButtons {
+    display: none;
 }
 
 .heroLinks{
@@ -336,5 +341,5 @@ h4 {
 /* -----------
     Project Page
     ------------ */
+}
 
-    
